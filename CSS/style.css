@@ -1,0 +1,168 @@
+:root, [data-bs-theme=SR-dark] {
+    --background-black: #161616;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #b5b5b5;
+    --transparent-white:rgba(255, 255, 255, 0.8);
+    --orange: #f69800;
+    --glas: rgba(255, 255, 255, 0.1);
+    --background-filter: blur(12.5px);
+    --image-gradient: linear-gradient(20deg, rgba(22, 22, 22, 0.50) 0%, rgba(22, 22, 22, 0.00) 100%);
+    --brd: 1px solid var(--white);
+    --brd-radius: 4px;
+    --btn-primary:var(--orange);
+    --btn-primary-hover: #C07700;
+    --btn-secondary-bg: rgba(240, 181, 86, 0.20);
+    --btn-secondary-brd: 1px solid rgba(240, 181, 86, 0.70);
+    --btn-secondary-bg-hover: #F0B556;
+    --btn-secondary-brd-hover: 1px solid #F69800;
+}
+
+
+body {
+    background-color: var(--background-black);
+    color: var(--white);
+}
+
+/* Hero */
+.hero-img {
+    background: url(/Content/Images/hero-img.jpg),  no-repeat 126.632% 271.354%  / cover;
+    height: 448px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Slider */
+#angebote {
+    position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.slider-side-text {
+    width: 25%;
+    display: flex;
+
+}
+.swiper {
+    padding-top: 3.125rem;
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 1.25rem !important;
+  }
+  
+  .swiper-slide {
+    width: 18.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide h4 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+  }
+  
+  .swiper-slide p {
+    color: #dadada;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .swiper-slide a {
+    margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+    padding: 0.438em 1.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .swiper-slide a:hover {
+    
+  }
+  
+  .swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 4rem;
+  }
+  
+  .swiper-slide-active div {
+    display: block;
+    opacity: 1;
+  }
+  
+  .swiper-slide--one {
+    background: var(--image-gradient),
+      url("/Content/Images/Slider-Beratung.jpg")
+        no-repeat 50% 50% / cover;
+    border-radius: var(--brd-radius);
+  }
+  
+  .swiper-slide--two {
+    background: var(--image-gradient),
+      url("/Content/Images/Slider-Planung.jpg")
+        no-repeat 50% 50% / cover;
+    border-radius: var(--brd-radius);
+  }
+  
+  .swiper-slide--three {
+    background: var(--image-gradient),
+      url("/Content/Images/Slider-Einbau.jpg")
+        no-repeat 50% 50% / cover;
+        border-radius: var(--brd-radius);
+  }
+  
+  .swiper-slide--four {
+    background: var(--image-gradient),
+      url("/Content/Images/Slider-Wartung.jpg")
+        no-repeat 50% 50% / cover;
+    border-radius: var(--brd-radius);
+  }
+  
+  .swiper-slide--five {
+    background: var(--image-gradient),
+      url("/Content/Images/Slider-Reparatur.jpg")
+        no-repeat 50% 50% / cover;
+    border-radius: var(--brd-radius);
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+  
+  @media screen and (min-width: 48rem) {
+    #angebote {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  /* @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 85%;
+    }
+  } */
