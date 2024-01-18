@@ -1,40 +1,53 @@
-:root, [data-bs-theme=SR-dark] {
-    --background-black: #161616;
-    --black: #000000;
-    --white: #ffffff;
-    --gray: #b5b5b5;
-    --transparent-white:rgba(255, 255, 255, 0.8);
-    --orange: #f69800;
-    --glas: rgba(255, 255, 255, 0.1);
-    --background-filter: blur(12.5px);
-    --image-gradient: linear-gradient(20deg, rgba(22, 22, 22, 0.50) 0%, rgba(22, 22, 22, 0.00) 100%);
-    --brd: 1px solid var(--white);
-    --brd-radius: 4px;
-    --btn-primary:var(--orange);
-    --btn-primary-hover: #C07700;
-    --btn-secondary-bg: rgba(240, 181, 86, 0.20);
-    --btn-secondary-brd: 1px solid rgba(240, 181, 86, 0.70);
-    --btn-secondary-bg-hover: #F0B556;
-    --btn-secondary-brd-hover: 1px solid #F69800;
+:root,
+[data-bs-theme=SR-dark] {
+  --background-black: #161616;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #b5b5b5;
+  --transparent-white: rgba(255, 255, 255, 0.8);
+  --orange: #f69800;
+  --glas: rgba(255, 255, 255, 0.1);
+  --background-filter: blur(12.5px);
+  --image-gradient: linear-gradient(20deg, rgba(22, 22, 22, 0.50) 0%, rgba(22, 22, 22, 0.00) 100%);
+  --brd: 1px solid var(--white);
+  --brd-radius: 4px;
+  --btn-primary: var(--orange);
+  --btn-primary-hover: #C07700;
+  --btn-secondary-bg: rgba(240, 181, 86, 0.20);
+  --btn-secondary-brd: 1px solid rgba(240, 181, 86, 0.70);
+  --btn-secondary-bg-hover: #F0B556;
+  --btn-secondary-brd-hover: 1px solid #F69800;
 }
 
 
 body {
-    background-color: var(--background-black);
-    color: var(--white);
+  background-color: var(--background-black);
+  color: var(--white);
+}
+
+p.body-tiny {
+  font-size: 12px;
+}
+
+a {
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--btn-primary-hover);
 }
 
 /* Hero */
 .hero-img {
-    background: url(/Content/Images/hero-img.jpg),  no-repeat 126.632% 271.354%  / cover;
-    height: 448px;
-    width: 100%;
-    flex-shrink: 0;
+  background: url(/Content/Images/hero-img.jpg), no-repeat 126.632% 271.354% / cover;
+  height: 448px;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 /* Slider */
 #angebote {
-    position: relative;
+  position: relative;
   margin: 0 auto;
   min-height: 100vh;
   column-gap: 3rem;
@@ -42,127 +55,356 @@ body {
 }
 
 .slider-side-text {
-    width: 25%;
-    display: flex;
+  width: 25%;
+  display: flex;
 
 }
+
 .swiper {
-    padding-top: 3.125rem;
-  }
-  
-  .swiper-pagination-bullet,
-  .swiper-pagination-bullet-active {
-    background: #fff;
-  }
-  
-  .swiper-pagination {
-    bottom: 1.25rem !important;
-  }
-  
-  .swiper-slide {
-    width: 18.75rem;
-    height: 28.125rem;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h4 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 4rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: var(--image-gradient),
+    url("/Content/Images/Slider-Beratung.jpg") no-repeat 50% 50% / cover;
+  border-radius: var(--brd-radius);
+}
+
+.swiper-slide--two {
+  background: var(--image-gradient),
+    url("/Content/Images/Slider-Planung.jpg") no-repeat 50% 50% / cover;
+  border-radius: var(--brd-radius);
+}
+
+.swiper-slide--three {
+  background: var(--image-gradient),
+    url("/Content/Images/Slider-Einbau.jpg") no-repeat 50% 50% / cover;
+  border-radius: var(--brd-radius);
+}
+
+.swiper-slide--four {
+  background: var(--image-gradient),
+    url("/Content/Images/Slider-Wartung.jpg") no-repeat 50% 50% / cover;
+  border-radius: var(--brd-radius);
+}
+
+.swiper-slide--five {
+  background: var(--image-gradient),
+    url("/Content/Images/Slider-Reparatur.jpg") no-repeat 50% 50% / cover;
+  border-radius: var(--brd-radius);
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+
+@media screen and (min-width: 48rem) {
+  #angebote {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: self-start;
+    align-items: center;
   }
-  
-  .swiper-slide h4 {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 0.625rem;
-    padding: 0 0 0 1.563rem;
-    text-transform: uppercase;
-  }
-  
-  .swiper-slide p {
-    color: #dadada;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 0 1.563rem;
-    line-height: 1.6;
-    font-size: 0.75rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  
-  .swiper-slide a {
-    margin: 1.25rem 1.563rem 3.438rem 1.563rem;
-    padding: 0.438em 1.875rem;
-    font-size: 0.9rem;
-  }
-  
-  .swiper-slide a:hover {
-    
-  }
-  
-  .swiper-slide div {
-    display: none;
-    opacity: 0;
-    padding-bottom: 4rem;
-  }
-  
-  .swiper-slide-active div {
-    display: block;
-    opacity: 1;
-  }
-  
-  .swiper-slide--one {
-    background: var(--image-gradient),
-      url("/Content/Images/Slider-Beratung.jpg")
-        no-repeat 50% 50% / cover;
-    border-radius: var(--brd-radius);
-  }
-  
-  .swiper-slide--two {
-    background: var(--image-gradient),
-      url("/Content/Images/Slider-Planung.jpg")
-        no-repeat 50% 50% / cover;
-    border-radius: var(--brd-radius);
-  }
-  
-  .swiper-slide--three {
-    background: var(--image-gradient),
-      url("/Content/Images/Slider-Einbau.jpg")
-        no-repeat 50% 50% / cover;
-        border-radius: var(--brd-radius);
-  }
-  
-  .swiper-slide--four {
-    background: var(--image-gradient),
-      url("/Content/Images/Slider-Wartung.jpg")
-        no-repeat 50% 50% / cover;
-    border-radius: var(--brd-radius);
-  }
-  
-  .swiper-slide--five {
-    background: var(--image-gradient),
-      url("/Content/Images/Slider-Reparatur.jpg")
-        no-repeat 50% 50% / cover;
-    border-radius: var(--brd-radius);
-  }
-  
-  .swiper-3d .swiper-slide-shadow-left,
-  .swiper-3d .swiper-slide-shadow-right {
-    background-image: none;
-  }
-  
-  
-  @media screen and (min-width: 48rem) {
-    #angebote {
-      display: flex;
-      align-items: center;
-    }
-  }
-  
-  /* @media screen and (min-width: 93.75rem) {
+}
+
+/* @media screen and (min-width: 93.75rem) {
     .swiper {
       width: 85%;
     }
   } */
+
+/* Team */
+
+#team .card{
+  border: var(--brd);
+}
+
+/*form styles*/
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform ul {
+  padding: 0 2rem;
+}
+
+#msform fieldset .form-card {
+  border: 0 none;
+  border-radius: 0px;
+  padding: 20px 40px 30px 40px;
+  box-sizing: border-box;
+  width: 94%;
+  margin: 0 3% 20px 3%;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+#msform fieldset {
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform fieldset .form-card {
+  text-align: left;
+}
+
+#msform input.form-control,
+#msform textarea,
+#msform select {
+  border: 0.5px solid var(--gray);
+  border-radius: var(--brd-radius);
+  background-color: var(--white);
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+#msform input.form-control:focus,
+#msform textarea:focus,
+#msform select:focus {
+  box-shadow: 0 0 4px 4px rgba(240, 181, 86, 0.20);
+}
+
+/*Primary Buttons*/
+#msform .action-button {
+  background: var(--btn-primary);
+  color: var(--white);
+  border: 0 none;
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+#msform .action-button:hover {
+  background: var(--btn-primary-hover);
+  color: var(--white);
+  border: 0 none;
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+  background: var(--btn-secondary-bg);
+  color: var(--orange);
+  border: var(--btn-secondary-brd);
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+#msform .action-button-previous:hover {
+  background: var(--btn-secondary-bg-hover);
+  color: var(--white);
+  border: var(--btn-secondary-brd-hover);
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+
+/*The background card*/
+.card {
+  z-index: 0;
+  border: none;
+  border-radius: var(--brd-radius);
+  position: relative;
+  background: var(--black);
+  backdrop-filter: var(--background-filter);
+}
+
+
+/*progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#progressbar .active {
+  color: var(--orange)
+}
+
+#progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+#progressbar li span {
+  padding-top: 0.5rem;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar i::before {
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: block;
+  position: relative;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 50%;
+  outline: var(--background-black) solid 0.5rem;
+}
+
+#progressbar .active i::before {
+  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: block;
+  position: relative;
+  color: var(--white);
+  background: var(--orange);
+  border-radius: 50%;
+  outline: var(--background-black) solid 0.5rem;
+}
+
+/*ProgressBar before any progress*/
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: var(--white);
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--glas);
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: var(--orange);
+}
+
+/*Imaged Radio Buttons*/
+.form-check-input:checked[type=radio] {
+  background-image: url(/Content/Images/check.svg);
+  background-color: transparent;
+  border-color: var(--orange);
+}
+
+.form-check-input:focus[type=radio] {
+  box-shadow: 0 0 4px 4px rgba(240, 181, 86, 0.20);
+}
+
+/*Fit image in bootstrap div*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* FAQ */
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-color: var(--white);
+  --bs-accordion-active-bg: var(--glas);
+  --bs-accordion-border-color: var(--glas);
+  --bs-accordion-bg:var(--black);
+  --bs-accordion-btn-bg: var(--glas);
+}
+
+.accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+  border: var(--brd)
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23F69800' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23F69800' class='bi bi-chevron-up' viewBox='0 0 16 16'%3E%3Cpath d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z'/%3E%3C/svg%3E");
+}

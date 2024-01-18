@@ -285,218 +285,492 @@
           <p class="text-center">Erweitern Sie die Anlage für Heizzwecke. Wir sind Ihr Partner bei der Suche nach der
             besten Kombination von Solarthermie und Wärmepumpe.</p>
           <h3 class="text-center">Checkliste Solarthermie</h3>
-          <div class="row justify-content-center">
-            <div class="col-11 col-sm-10 col-md-10 col-lg-8 text-center p-0 mt-3 mb-2">
-              <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <form id="ms-form">
-                  <!-- progress bar -->
+                <form id="msform">
+                  <!-- progressbar -->
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-8 text-center p-0 mt-3 mb-2">
                   <ul id="progressbar">
-                    <li class="active" id="haus">Haus</li>
-                    <li id="heizung">Heizung</li>
-                    <li id="solar">Solarthermieanlage</li>
-                    <li id="person">Person</li>
+                    <li class="active d-flex flex-column align-items-center" id="haus"><i class="bi bi-house-door"></i>
+                      <span>Haus</span>
+                    </li>
+                    <li class="d-flex flex-column align-items-center" id="heizung"><i
+                        class="bi bi-thermometer-half"></i><span>Heizung</span></li>
+                    <li class="d-flex flex-column align-items-center" id="solar"><i
+                        class="bi bi-brightness-high"></i><span>Solarthermieanlage</span></li>
+                    <li class="d-flex flex-column align-items-center" id="person"><i
+                        class="bi bi-person"></i><span>Person</span></li>
                   </ul>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-10 col-lg-8 p-0 mt-3 mb-2">
+                      <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                  <!-- fieldsets -->
                   <fieldset>
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="mb-3">
-                          <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
-                          <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
-                          <div class="row">
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="süd">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Süd
-                                </label>
+                    <div class="form-card">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="süd">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Süd
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="südost">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Südost
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="südwest">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Südwest
+                                  </label>
+                                </div>
                               </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="südost">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Südost
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="südwest">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Südwest
-                                </label>
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="ost">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Ost
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="west">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    West
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Nord">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Nord
+                                  </label>
+                                </div>
                               </div>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="ost">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Ost
-                                </label>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wie groß ist die Dachneigung (0-Grad bei Flachdach)?</label>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="0°">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    0°
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="15°">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    15°
+                                  </label>
+                                </div>
                               </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="west">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  West
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="Nord">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Nord
-                                </label>
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="30°">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    30°
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="60°">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    60°
+                                  </label>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="mb-3">
-                          <label class="form-label">Wie groß ist die Dachneigung (0-Grad bei Flachdach)?</label>
-                          <div class="row">
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="0°">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  0°
-                                </label>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Wie ist Ihr Haus ausgestattet?</label> <a href="#"
+                              data-bs-toggle="tooltip" data-bs-title="Angabe in m"><i class="bi bi-info-circle"></i></a>
+                            <div class="row">
+                              <div class="col">
+                                <input type="number" name="Textfeld" class="form-control" placeholder="Breite">
                               </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="15°">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  15°
-                                </label>
+                              <div class="col">
+                                <input type="number" name="Textfeld" class="form-control" placeholder="Höhe">
                               </div>
                             </div>
-                            <div class="col">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="30°">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  30°
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="60°">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  60°
-                                </label>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wann wurde das Haus gebaut?</label>
+                            <div class="row">
+                              <div class="col-6">
+                                <select class="form-select" aria-label="Default select example" aria-placeholder="1950">
+                                  <option selected>1950</option>
+                                  <option value="1">1951</option>
+                                  <option value="2">1952</option>
+                                  <option value="3">1953</option>
+                                  <option value="4">1954</option>
+                                  <option value="5">1955</option>
+                                  <option value="6">1956</option>
+                                  <option value="7">1957</option>
+                                  <option value="8">1958</option>
+                                  <option value="9">1959</option>
+                                  <option value="10">1960</option>
+                                  <option value="11">1961</option>
+                                  <option value="12">1962</option>
+                                  <option value="13">1963</option>
+                                  <option value="14">1964</option>
+                                  <option value="15">1965</option>
+                                  <option value="16">1966</option>
+                                  <option value="17">1967</option>
+                                  <option value="18">1968</option>
+                                  <option value="19">1969</option>
+                                  <option value="20">1970</option>
+                                  <option value="21">1971</option>
+                                  <option value="22">1972</option>
+                                  <option value="23">1973</option>
+                                  <option value="24">1974</option>
+                                  <option value="25">1975</option>
+                                  <option value="26">1976</option>
+                                  <option value="27">1977</option>
+                                  <option value="28">1978</option>
+                                  <option value="29">1979</option>
+                                  <option value="30">1980</option>
+                                  <option value="31">1981</option>
+                                  <option value="32">1982</option>
+                                  <option value="33">1983</option>
+                                  <option value="34">1984</option>
+                                  <option value="35">1985</option>
+                                  <option value="36">1986</option>
+                                  <option value="37">1987</option>
+                                  <option value="38">1988</option>
+                                  <option value="39">1989</option>
+                                  <option value="40">1990</option>
+                                  <option value="41">1991</option>
+                                  <option value="42">1992</option>
+                                  <option value="43">1993</option>
+                                  <option value="44">1994</option>
+                                  <option value="45">1995</option>
+                                  <option value="46">1996</option>
+                                  <option value="47">1997</option>
+                                  <option value="48">1998</option>
+                                  <option value="49">1999</option>
+                                  <option value="50">2000</option>
+                                  <option value="51">2001</option>
+                                  <option value="52">2002</option>
+                                  <option value="53">2003</option>
+                                  <option value="54">2004</option>
+                                  <option value="55">2005</option>
+                                  <option value="56">2006</option>
+                                  <option value="57">2007</option>
+                                  <option value="58">2008</option>
+                                  <option value="59">2009</option>
+                                  <option value="60">2010</option>
+                                  <option value="61">2011</option>
+                                  <option value="62">2012</option>
+                                  <option value="63">2012</option>
+                                  <option value="64">2014</option>
+                                  <option value="65">2015</option>
+                                  <option value="66">2016</option>
+                                  <option value="67">2017</option>
+                                  <option value="68">2018</option>
+                                  <option value="69">2019</option>
+                                  <option value="70">2020</option>
+                                  <option value="71">2021</option>
+                                  <option value="72">2022</option>
+                                  <option value="73">2023</option>
+                                </select>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-6">
-                        <div class="mb-3">
-                          <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
-                          <div class="row">
-                            <div class="col">
-                              <input type="number" name="Textfeld" class="form-control" placeholder="Breite">
-                            </div>
-                            <div class="col">
-                              <input type="number" name="Textfeld" class="form-control" placeholder="Höhe">
-                            </div>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Nächste" />
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-card">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Wie heizen Sie bisher?</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Welchen Brennstoff nutzen Sie?</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
                           </div>
                         </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Und welche Art des Heizkessels?</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wie erwärmen Sie das Brauchwasser?</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Zurück" />
+                    <input type="button" name="next" class="next action-button" value="Nächste" />
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-card">
                         <div class="row">
                           <div class="col-6">
                             <div class="mb-3">
-                              <label class="form-label">Wann wurde das Haus gebaut?</label>
+                              <label class="form-label">Wie heizen Sie bisher?</label>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault1" value="nur Warmwasserbereitung">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      nur Warmwasserbereitung
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault1" value="Heizungsunterstützung">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Heizungsunterstützung
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="beides">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    beides
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="mit Anschluss Geschirrspüler">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    mit Anschluss Geschirrspüler
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="mit Anschluss Waschmaschine">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    mit Anschluss Waschmaschine
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="beides">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    beides
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Wie groß ist Ihr täglicher Warmwasserverbrauch?</label> <a href="#"
+                              data-bs-toggle="tooltip" data-bs-title="Angabe in Liter"><i class="bi bi-info-circle"></i></a>
+                              <div class="row">
+                                <div class="col-6">
                               <select class="form-select" aria-label="Default select example"
-                                aria-placeholder="Baujahr">
-                                <option selected>1950</option>
-                                <option value="1">1951</option>
-                                <option value="2">1952</option>
-                                <option value="3">1953</option>
-                                <option value="1">1954</option>
-                                <option value="2">1955</option>
-                                <option value="3">1956</option>
-                                <option value="1">1957</option>
-                                <option value="2">1958</option>
-                                <option value="3">1959</option>
-                                <option value="3">1960</option>
-                                <option value="1">1961</option>
-                                <option value="2">1962</option>
-                                <option value="3">1963</option>
-                                <option value="1">1964</option>
-                                <option value="2">1965</option>
-                                <option value="3">1966</option>
-                                <option value="1">1967</option>
-                                <option value="2">1968</option>
-                                <option value="3">1969</option>
-                                <option value="3">1970</option>
-                                <option value="1">1971</option>
-                                <option value="2">1972</option>
-                                <option value="3">1973</option>
-                                <option value="1">1974</option>
-                                <option value="2">1975</option>
-                                <option value="3">1976</option>
-                                <option value="1">1977</option>
-                                <option value="2">1978</option>
-                                <option value="3">1979</option>
-                                <option value="3">1980</option>
-                                <option value="1">1981</option>
-                                <option value="2">1982</option>
-                                <option value="3">1983</option>
-                                <option value="1">1984</option>
-                                <option value="2">1985</option>
-                                <option value="3">1986</option>
-                                <option value="1">1987</option>
-                                <option value="2">1988</option>
-                                <option value="3">1989</option>
-                                <option value="3">1990</option>
-                                <option value="1">1991</option>
-                                <option value="2">1992</option>
-                                <option value="3">1993</option>
-                                <option value="1">1994</option>
-                                <option value="2">1995</option>
-                                <option value="3">1996</option>
-                                <option value="1">1997</option>
-                                <option value="2">1998</option>
-                                <option value="3">1999</option>
-                                <option value="3">2000</option>
-                                <option value="3">2001</option>
-                                <option value="3">2002</option>
-                                <option value="3">2003</option>
-                                <option value="3">2004</option>
-                                <option value="3">2005</option>
-                                <option value="3">2006</option>
-                                <option value="3">2007</option>
-                                <option value="3">2008</option>
-                                <option value="3">2009</option>
-                                <option value="3">2010</option>
-                                <option value="3">2011</option>
-                                <option value="3">2012</option>
-                                <option value="3">2012</option>
-                                <option value="3">2014</option>
-                                <option value="3">2015</option>
-                                <option value="3">2016</option>
-                                <option value="3">2017</option>
-                                <option value="3">2018</option>
-                                <option value="3">2019</option>
-                                <option value="3">2020</option>
-                                <option value="3">2021</option>
-                                <option value="3">2022</option>
-                                <option value="3">2023</option>
-                              </select>
+                                    aria-placeholder="40 l">
+                                    <option selected>40 l</option>
+                                    <option value="1">41 l</option>
+                                    <option value="2">42 l</option>
+                                    <option value="3">43 l</option>
+                                    <option value="4">44 l</option>
+                                    <option value="5">45 l</option>
+                                    <option value="6">46 l</option>
+                                    <option value="7">47 l</option>
+                                    <option value="8">48 l</option>
+                                    <option value="9">49 l</option>
+                                    <option value="10">50 l</option>
+                                    <option value="11">51 l</option>
+                                    <option value="12">52 l</option>
+                                    <option value="13">53 l</option>
+                                    <option value="14">54 l</option>
+                                    <option value="15">55 l</option>
+                                    <option value="16">56 l</option>
+                                    <option value="17">57 l</option>
+                                    <option value="18">58 l</option>
+                                    <option value="19">59 l</option>
+                                    <option value="20">60 l</option>
+                                    <option value="21">61 l</option>
+                                    <option value="22">62 l</option>
+                                    <option value="23">63 l</option>
+                                    <option value="24">64 l</option>
+                                    <option value="25">65 l</option>
+                                    <option value="26">66 l</option>
+                                    <option value="27">67 l</option>
+                                    <option value="28">68 l</option>
+                                    <option value="29">69 l</option>
+                                    <option value="30">70 l</option>
+                                    <option value="31">71 l</option>
+                                    <option value="32">72 l</option>
+                                    <option value="33">73 l</option>
+                                    <option value="34">74 l</option>
+                                    <option value="35">75 l</option>
+                                    <option value="36">76 l</option>
+                                    <option value="37">77 l</option>
+                                    <option value="38">78 l</option>
+                                    <option value="39">79 l</option>
+                                    <option value="40">80 l</option>
+                                    <option value="41">81 l</option>
+                                    <option value="42">82 l</option>
+                                    <option value="43">83 l</option>
+                                    <option value="44">84 l</option>
+                                    <option value="45">85 l</option>
+                                    <option value="46">86 l</option>
+                                    <option value="47">87 l</option>
+                                    <option value="48">88 l</option>
+                                    <option value="49">89 l</option>
+                                    <option value="50">90 l</option>
+                                    <option value="51">91 l</option>
+                                    <option value="52">92 l</option>
+                                    <option value="53">93 l</option>
+                                    <option value="54">94 l</option>
+                                    <option value="55">95 l</option>
+                                    <option value="56">96 l</option>
+                                    <option value="57">97 l</option>
+                                    <option value="58">98 l</option>
+                                    <option value="59">99 l</option>
+                                  </select>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label class="form-label">Welche Kollektoren bevorzugen Sie?</label>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault1" value="Flachkollektoren">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Flachkollektoren
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                      id="flexRadioDefault1" value="Röhrenkollektoren">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Röhrenkollektoren
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Wie viel Wohnfläche wollen Sie beheizen?</label> <a href="#"
+                              data-bs-toggle="tooltip" data-bs-title="Angabe in m²"><i class="bi bi-info-circle"></i></a>
+                              <div class="row">
+                                <div class="col-6">
+                                  <input type="number" name="Textfeld" class="form-control" placeholder="Wohnfläche in m²">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Weitere Informationen, die Sie uns mitteilen wollen</label> 
+                              <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
                             </div>
                           </div>
                         </div>
                       </div>
+                        <input type="button" name="previous" class="previous action-button-previous" value="Zurück" />
+                        <input type="button" name="make_payment" class="next action-button" value="Nächste" />
                   </fieldset>
+                  <fieldset>
+                    <div class="form-card">
+                      <strong>Angaben zu Ihrer Person:</strong>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Vorname*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Vorname">
+                          </div>
+                          <div class="row">
+                            <div class="col-9">
+                              <div class="mb-3">
+                                <label class="form-label">Straße*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Straße">
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="mb-3">
+                                <label class="form-label">Hausnummer*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Nr.">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Telefon</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Telefon">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label class="form-label">Nachname*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Nachname">
+                          </div>
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="mb-3">
+                                <label class="form-label">PLZ*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="PLZ">
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <div class="mb-3">
+                                <label class="form-label">Ort*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Ort">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">E-Mail-Adresse*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="E-Mail-Adresse">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="body-tiny">*Pflichtfeld</p>
+                    </div>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Zurück" />
+                    <input type="button" name="make_payment" class="next action-button" value="Absenden" />
+                  </fieldset>
+                  <fieldset>
+                    <div class="form-card">
+                        <div class="row">
+                        <h3 class="text-center"><strong>Danke für deine Anfrage!</strong></h3>
+                        </div>
+                    </div>
+                </fieldset>
+                      </div>
+                    </div>
+                  </div>
                 </form>
+
               </div>
-            </div>
-          </div>
-
-
-        </div>
     </section>
     <!-- Section 5 end -->
     <!-- Section 6 start -->
@@ -505,8 +779,98 @@
         <!-- Content goes here -->
         <div class="content">
           <h2 class="text-center">FAQ</h2>
-
+          <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-8 p-0 mt-3 mb-2">
+              <div class="accordion" id="accordionFaq">
+                <div class="accordion-item rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Warum spielt der Energiebedarf von Häusern in der Klimadebatte eine so große Rolle?
+                    </button>
+                  </h6>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Gebäude verschlingen etwa ein Drittel des gesamten Energieverbrauchs in Deutschland. Rund 13 Prozent davon ist Strom, 87 Prozent fließen in die Heizung. Will Deutschland die Klimaschutzziele erreichen, muss dieser Energieverbrauch um 40 Prozent gesenkt werden.  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Was sind günstige Bedingungen für eine Solarthermieanlage?
+                    </button>
+                  </h6>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Am besten geeignet ist ein unverschattetes Dach, das nach Süden zeigt. Südost- oder Südwestlagen eignen sich auch. Bei einem Ost- oder Westdach verringert sich die zu erzielende Leistung um ein Viertel. Eine Dachneigung zwischen 30 und 60 Grad ist günstig. Solarkollektoren lassen sich auch an der Hauswand anbringen.  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Wie funktionieren Sonnenkollektoren?
+                    </button>
+                  </h6>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Unter Glas liegt eine beschichtete Metallfläche, die Sonnenstrahlen aufnimmt und die dabei entstehende Wärme an ein Röhrensystem abgibt. Dieses ist mit einer Spezialflüssigkeit gefüllt und trägt die Wärme weiter. Flachkollektoren sind preislich günstiger, sammeln aber nicht so viel Wärme ein wie Röhrenkollektoren. Achtung: Auf den ersten Blick ist auf dem Dach oft nicht zu unterscheiden, ob eine Solarthermie- oder Photovoltaik-Anlage montiert ist. Im Fall von PV, also Photovoltaik, spricht man von Solarzelle, Solarpanel oder Solarmodul.  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Wie viel Fläche für die Kollektoren ist notwendig?
+                    </button>
+                  </h6>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Wer nur Warmwasser erzeugen will, muss pro Person etwa 1,5 m² für Flachkollektoren vorsehen. Röhrenkollektoren sind ergiebiger; da reicht 1 m² Fläche pro Person. Wenn die Heizungsunterstützung dazu kommt, ist mit 3 m² Flachkollektoren oder 2 m² Röhrenkollektoren zu rechnen.  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Welche Leistung erzielt eine Solarthermieanlage?
+                    </button>
+                  </h6>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Je nach Technik und Witterung kann eine Anlage im Schnitt zwischen 40 und 44 Prozent der zuvor verbrauchten Energie einsparen helfen. Anders ausgedrückt: Bei der Warmwasserbereitung ist mit bis zu 65 Prozent Energieeinsparung zu rechnen; bei der Heizungsunterstützung bis zu 35 Prozent.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Wann amortisiert sich eine Solarthermieanlage?
+                    </button>
+                  </h6>
+                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Bis zum Jahr 2020 sprach man von 15 bis 20 Jahren, bis sich die Anlage rechnet. Die Zeitspanne hat sich bei der rasanten Entwicklung der Energiepreise seither radikal verkürzt. Eine Zahl zur Orientierung: Laut Verbraucherzentrale erspart eine zehn Quadratmeter große Solarthermieanlage im Jahr bis zu 2500 kWh Erdgas ein.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mt-2 rounded-1">
+                  <h6 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Mit welchen staatlichen Fördermitteln ist zu rechnen?
+                    </button>
+                  </h6>
+                  <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      Es ist viel in Bewegung bei den Zuschüssen, die beim Neubau von Häusern und beim energetischen Umbau zu erwarten sind. Regelungen gibt es im Gebäudeenergiegesetz; es gibt eine Bundesförderung effiziente Wärmenetze, eine Bundesförderung effiziente Gebäude und es gibt Unterstützung von der staatlichen Förderbank KfW. In Teilbereichen haben auch einige Bundesländer Hilfsprogramme aufgelegt.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Section 6 end -->
   </main>
@@ -528,10 +892,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <!-- Slider JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-  <script src="index.js"></script>
   <!-- costume JS file link -->
+  <script src="index.js"></script>
 </body>
 
 </html>
