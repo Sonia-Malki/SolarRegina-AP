@@ -29,13 +29,17 @@ var swiper = new Swiper(".swiper", {
         slidesPerView: 2
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 3
       },
       1560: {
         slidesPerView: 3
       }
     }
   });
+function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
 
 // Form
 $(document).ready(function(){
