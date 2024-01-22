@@ -174,7 +174,62 @@ a:hover {
     }
   } */
 
-/* Team */
+  /* Expertise */
+  /* Image Map */
+  .image-map {
+    position: relative;
+  }
+
+  .btn-map {
+    width: 2rem; 
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--btn-primary);
+    border: 0 none;
+    outline: 0.2rem solid var(--btn-primary);
+    outline-offset: 0.33rem;
+  }
+
+  .btn-map:hover, .btn-map:focus {
+    border-radius: 50%;
+    background-color: var(--btn-primary-hover);
+    border: 0 none;
+    outline: 0.2rem solid var(--btn-primary-hover);
+    outline-offset: 0.33rem;
+  }
+  
+  .btn-img-1 {
+    position: absolute; 
+    left: 42%; 
+    top: 3%; 
+  }
+  .btn-img-2 {
+    position: absolute; 
+    left: 30%; 
+    top: 55%; 
+  }
+  .btn-img-3 {
+    position: absolute; 
+    left: 42%; 
+    top: 72%; 
+  }
+  .btn-img-4 {
+    position: absolute; 
+    left: 50%; 
+    top: 35%; 
+  }
+  .btn-img-5 {
+    position: absolute; 
+    left: 60%; 
+    top: 80%; 
+  }
+  .btn-img-6 {
+    position: absolute; 
+    left: 67%; 
+    top: 45%; 
+  }
+
+  /* Team */
 
 #team .card{
   border: var(--brd);

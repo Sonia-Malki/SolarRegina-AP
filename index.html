@@ -163,9 +163,10 @@
                 Solarkollektoren erzeugen: Erweitern Sie die Anlage für Heizzwecke! Wir sind Ihr Partner bei der Suche
                 nach der besten Kombination von Solarthermie und Wärmepumpe.
                 Stöbern Sie auf dieser Website.</p>
-              <p>Füllen Sie das Erstanfrage-Formular aus. So erfahren wir alles Notwendige vor einer Hausbegehung und
+              <p>Füllen Sie das <a href="#formular">Erstanfrage-Formular</a> aus. So erfahren wir alles Notwendige vor
+                einer Hausbegehung und
                 Energieberatung.</p>
-              <button class="btn btn-primary" href="#formular">Zum Formular</button>
+              <a href="#formular"><button class="btn btn-primary">Zum Formular</button></a>
             </div>
           </div>
         </div>
@@ -180,18 +181,51 @@
           <h2 class="text-center">Unsere Expertise</h2>
           <div class="row align-items-center py-5">
             <div class="col-xl-8 col-lg-6">
-              <img src="/Content/Images/Skizze.png" alt="">
+              <div class="image-map">
+                <img src="/Content/Images/Skizze.svg" style="width: 100%; height: auto;">
+                <button type="button" class="btn btn-map btn-img-1" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="Solarkollektoren">
+                  1
+                </button>
+                <button type="button" class="btn btn-map btn-img-2" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="Pumpe">
+                  2
+                </button>
+                <button type="button" class="btn btn-map btn-img-3" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="Speicher">
+                  3
+                </button>
+                <button type="button" class="btn btn-map btn-img-4" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="Dusche">
+                  4
+                </button>
+                <button type="button" class="btn btn-map btn-img-5" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="Heizkessel">
+                  5
+                </button>
+                <button type="button" class="btn btn-map btn-img-6" data-bs-container="body" data-bs-toggle="popover"
+                  data-bs-placement="top" data-bs-content="heizkörper">
+                  6
+                </button>
+              </div>
             </div>
             <div class="col-xl-4 col-lg-6 px-5">
               <h3 class="">
                 So funktioniert Solarthermie
               </h3>
+              <p>Solarkollektoren (1) bestehen aus einer mit Glas bedeckten, dunkel beschichteten Metallfläche. <br>
+                Diese nimmt die Sonnenstrahlen auf und gibt die Wärme an ein System aus Kupferröhren auf der Rückseite
+                der Kollektoren ab. <br>
+                Eine Flüssigkeit aus Wasser und Frostschutzmittel transportiert im Röhrensystem die Wärme mithilfe einer
+                Pumpe (2) in einen Speicher (3). <br>
+                Von dort kann die Wärme als Brauchwasser in der Dusche (4) oder in einen Heizkessel (5) geleitet werden,
+                aus dem schließlich die Heizkörper (6) in den Räumen bedient werden.</p>
               <p>Für die Sonnenkollektoren eignet sich am besten ein unverschattetes Dach, das nach Süden zeigt. Südost-
                 oder Südwestlagen eignen sich auch. Eine Dachneigung zwischen 30 und 60 Grad ist günstig.</p>
               <p>Flachkollektoren sind preislich günstiger, sammeln aber nicht so viel Wärme ein wie Röhrenkollektoren.
               </p>
               <p>Weitere Infos zur Solarthermie finden Sie unter <a href="#faq">FAQ</a>.</p>
-              <button class="btn btn-primary" href="#faq">FAQ</button>
+              <a href="#faq"><button class="btn btn-primary">FAQ</button></a>
             </div>
           </div>
           <div class="row align-items-center py-5">
@@ -240,11 +274,11 @@
     <section class="team" id="team">
       <div class="container">
         <!-- Content goes here -->
-        <div class="content ">
+        <div class="content py-5">
           <h2 class="text-center">Unser Team</h2>
           <div class="row gx-3 py-5">
-            <div class="col-4 p-3">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 col-md-12 px-5 py-3">
+              <div class="card ">
                 <img src="/Content/Images/Team-Bild-1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Hans Hümme</h5>
@@ -253,8 +287,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-3">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 col-md-12 px-5 py-3">
+              <div class="card">
                 <img src="/Content/Images/Team-Bild-2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Regina Hümme</h5>
@@ -263,8 +297,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 p-3">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 col-md-12 px-5 py-3">
+              <div class="card">
                 <img src="/Content/Images/Team-Bild-3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Leonie Hümme</h5>
@@ -285,31 +319,31 @@
           <p class="text-center">Erweitern Sie die Anlage für Heizzwecke. Wir sind Ihr Partner bei der Suche nach der
             besten Kombination von Solarthermie und Wärmepumpe.</p>
           <h3 class="text-center">Checkliste Solarthermie</h3>
-                <form id="msform">
-                  <!-- progressbar -->
-                  <div class="row justify-content-center">
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-8 text-center p-0 mt-3 mb-2">
-                  <ul id="progressbar">
-                    <li class="active d-flex flex-column align-items-center" id="haus"><i class="bi bi-house-door"></i>
-                      <span>Haus</span>
-                    </li>
-                    <li class="d-flex flex-column align-items-center" id="heizung"><i
-                        class="bi bi-thermometer-half"></i><span>Heizung</span></li>
-                    <li class="d-flex flex-column align-items-center" id="solar"><i
-                        class="bi bi-brightness-high"></i><span>Solarthermieanlage</span></li>
-                    <li class="d-flex flex-column align-items-center" id="person"><i
-                        class="bi bi-person"></i><span>Person</span></li>
-                  </ul>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-11 col-sm-10 col-md-10 col-lg-8 p-0 mt-3 mb-2">
-                      <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+          <form id="msform">
+            <!-- progressbar -->
+            <div class="row justify-content-center">
+              <div class="col-11 col-sm-10 col-md-10 col-lg-8 text-center p-0 mt-3 mb-2">
+                <ul id="progressbar">
+                  <li class="active d-flex flex-column align-items-center" id="haus"><i class="bi bi-house-door"></i>
+                    <span>Haus</span>
+                  </li>
+                  <li class="d-flex flex-column align-items-center" id="heizung"><i
+                      class="bi bi-thermometer-half"></i><span>Heizung</span></li>
+                  <li class="d-flex flex-column align-items-center" id="solar"><i
+                      class="bi bi-brightness-high"></i><span>Solarthermieanlage</span></li>
+                  <li class="d-flex flex-column align-items-center" id="person"><i
+                      class="bi bi-person"></i><span>Person</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11 col-sm-10 col-md-10 col-lg-8 p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                   <!-- fieldsets -->
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Wie ist Ihr Haus ausgestattet?</label>
                             <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
@@ -403,7 +437,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Wie ist Ihr Haus ausgestattet?</label> <a href="#"
                               data-bs-toggle="tooltip" data-bs-title="Angabe in m"><i class="bi bi-info-circle"></i></a>
@@ -507,7 +541,7 @@
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Wie heizen Sie bisher?</label>
                             <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
@@ -517,7 +551,7 @@
                             <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Und welche Art des Heizkessels?</label>
                             <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
@@ -534,177 +568,179 @@
                   </fieldset>
                   <fieldset>
                     <div class="form-card">
-                        <div class="row">
-                          <div class="col-6">
-                            <div class="mb-3">
-                              <label class="form-label">Wie heizen Sie bisher?</label>
-                              <div class="row">
-                                <div class="col">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                      id="flexRadioDefault1" value="nur Warmwasserbereitung">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      nur Warmwasserbereitung
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                      id="flexRadioDefault1" value="Heizungsunterstützung">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Heizungsunterstützung
-                                    </label>
-                                  </div>
-                                </div>
+                      <div class="row">
+                        <div class="col-12 col-lg-6 col-sm-12">
+                          <div class="mb-3">
+                            <label class="form-label">Wie heizen Sie bisher?</label>
+                            <div class="row">
+                              <div class="col">
                                 <div class="form-check">
                                   <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="beides">
+                                    id="flexRadioDefault1" value="nur Warmwasserbereitung">
                                   <label class="form-check-label" for="flexRadioDefault1">
-                                    beides
+                                    nur Warmwasserbereitung
                                   </label>
                                 </div>
                                 <div class="form-check">
                                   <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="mit Anschluss Geschirrspüler">
+                                    id="flexRadioDefault1" value="Heizungsunterstützung">
                                   <label class="form-check-label" for="flexRadioDefault1">
-                                    mit Anschluss Geschirrspüler
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="mit Anschluss Waschmaschine">
-                                  <label class="form-check-label" for="flexRadioDefault1">
-                                    mit Anschluss Waschmaschine
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="beides">
-                                  <label class="form-check-label" for="flexRadioDefault1">
-                                    beides
+                                    Heizungsunterstützung
                                   </label>
                                 </div>
                               </div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Wie groß ist Ihr täglicher Warmwasserverbrauch?</label> <a href="#"
-                              data-bs-toggle="tooltip" data-bs-title="Angabe in Liter"><i class="bi bi-info-circle"></i></a>
-                              <div class="row">
-                                <div class="col-6">
-                              <select class="form-select" aria-label="Default select example"
-                                    aria-placeholder="40 l">
-                                    <option selected>40 l</option>
-                                    <option value="1">41 l</option>
-                                    <option value="2">42 l</option>
-                                    <option value="3">43 l</option>
-                                    <option value="4">44 l</option>
-                                    <option value="5">45 l</option>
-                                    <option value="6">46 l</option>
-                                    <option value="7">47 l</option>
-                                    <option value="8">48 l</option>
-                                    <option value="9">49 l</option>
-                                    <option value="10">50 l</option>
-                                    <option value="11">51 l</option>
-                                    <option value="12">52 l</option>
-                                    <option value="13">53 l</option>
-                                    <option value="14">54 l</option>
-                                    <option value="15">55 l</option>
-                                    <option value="16">56 l</option>
-                                    <option value="17">57 l</option>
-                                    <option value="18">58 l</option>
-                                    <option value="19">59 l</option>
-                                    <option value="20">60 l</option>
-                                    <option value="21">61 l</option>
-                                    <option value="22">62 l</option>
-                                    <option value="23">63 l</option>
-                                    <option value="24">64 l</option>
-                                    <option value="25">65 l</option>
-                                    <option value="26">66 l</option>
-                                    <option value="27">67 l</option>
-                                    <option value="28">68 l</option>
-                                    <option value="29">69 l</option>
-                                    <option value="30">70 l</option>
-                                    <option value="31">71 l</option>
-                                    <option value="32">72 l</option>
-                                    <option value="33">73 l</option>
-                                    <option value="34">74 l</option>
-                                    <option value="35">75 l</option>
-                                    <option value="36">76 l</option>
-                                    <option value="37">77 l</option>
-                                    <option value="38">78 l</option>
-                                    <option value="39">79 l</option>
-                                    <option value="40">80 l</option>
-                                    <option value="41">81 l</option>
-                                    <option value="42">82 l</option>
-                                    <option value="43">83 l</option>
-                                    <option value="44">84 l</option>
-                                    <option value="45">85 l</option>
-                                    <option value="46">86 l</option>
-                                    <option value="47">87 l</option>
-                                    <option value="48">88 l</option>
-                                    <option value="49">89 l</option>
-                                    <option value="50">90 l</option>
-                                    <option value="51">91 l</option>
-                                    <option value="52">92 l</option>
-                                    <option value="53">93 l</option>
-                                    <option value="54">94 l</option>
-                                    <option value="55">95 l</option>
-                                    <option value="56">96 l</option>
-                                    <option value="57">97 l</option>
-                                    <option value="58">98 l</option>
-                                    <option value="59">99 l</option>
-                                  </select>
-                            </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1" value="beides">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  beides
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1" value="mit Anschluss Geschirrspüler">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  mit Anschluss Geschirrspüler
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1" value="mit Anschluss Waschmaschine">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  mit Anschluss Waschmaschine
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1" value="beides">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  beides
+                                </label>
                               </div>
                             </div>
                           </div>
-                          <div class="col-6">
-                            <div class="mb-3">
-                              <label class="form-label">Welche Kollektoren bevorzugen Sie?</label>
-                              <div class="row">
-                                <div class="col">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                      id="flexRadioDefault1" value="Flachkollektoren">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Flachkollektoren
-                                    </label>
-                                  </div>
-                                </div>
-                                <div class="col">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                      id="flexRadioDefault1" value="Röhrenkollektoren">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Röhrenkollektoren
-                                    </label>
-                                  </div>
-                                </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wie groß ist Ihr täglicher Warmwasserverbrauch?</label> <a
+                              href="#" data-bs-toggle="tooltip" data-bs-title="Angabe in Liter"><i
+                                class="bi bi-info-circle"></i></a>
+                            <div class="row">
+                              <div class="col-6">
+                                <select class="form-select" aria-label="Default select example" aria-placeholder="40 l">
+                                  <option selected>40 l</option>
+                                  <option value="1">41 l</option>
+                                  <option value="2">42 l</option>
+                                  <option value="3">43 l</option>
+                                  <option value="4">44 l</option>
+                                  <option value="5">45 l</option>
+                                  <option value="6">46 l</option>
+                                  <option value="7">47 l</option>
+                                  <option value="8">48 l</option>
+                                  <option value="9">49 l</option>
+                                  <option value="10">50 l</option>
+                                  <option value="11">51 l</option>
+                                  <option value="12">52 l</option>
+                                  <option value="13">53 l</option>
+                                  <option value="14">54 l</option>
+                                  <option value="15">55 l</option>
+                                  <option value="16">56 l</option>
+                                  <option value="17">57 l</option>
+                                  <option value="18">58 l</option>
+                                  <option value="19">59 l</option>
+                                  <option value="20">60 l</option>
+                                  <option value="21">61 l</option>
+                                  <option value="22">62 l</option>
+                                  <option value="23">63 l</option>
+                                  <option value="24">64 l</option>
+                                  <option value="25">65 l</option>
+                                  <option value="26">66 l</option>
+                                  <option value="27">67 l</option>
+                                  <option value="28">68 l</option>
+                                  <option value="29">69 l</option>
+                                  <option value="30">70 l</option>
+                                  <option value="31">71 l</option>
+                                  <option value="32">72 l</option>
+                                  <option value="33">73 l</option>
+                                  <option value="34">74 l</option>
+                                  <option value="35">75 l</option>
+                                  <option value="36">76 l</option>
+                                  <option value="37">77 l</option>
+                                  <option value="38">78 l</option>
+                                  <option value="39">79 l</option>
+                                  <option value="40">80 l</option>
+                                  <option value="41">81 l</option>
+                                  <option value="42">82 l</option>
+                                  <option value="43">83 l</option>
+                                  <option value="44">84 l</option>
+                                  <option value="45">85 l</option>
+                                  <option value="46">86 l</option>
+                                  <option value="47">87 l</option>
+                                  <option value="48">88 l</option>
+                                  <option value="49">89 l</option>
+                                  <option value="50">90 l</option>
+                                  <option value="51">91 l</option>
+                                  <option value="52">92 l</option>
+                                  <option value="53">93 l</option>
+                                  <option value="54">94 l</option>
+                                  <option value="55">95 l</option>
+                                  <option value="56">96 l</option>
+                                  <option value="57">97 l</option>
+                                  <option value="58">98 l</option>
+                                  <option value="59">99 l</option>
+                                </select>
                               </div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Wie viel Wohnfläche wollen Sie beheizen?</label> <a href="#"
-                              data-bs-toggle="tooltip" data-bs-title="Angabe in m²"><i class="bi bi-info-circle"></i></a>
-                              <div class="row">
-                                <div class="col-6">
-                                  <input type="number" name="Textfeld" class="form-control" placeholder="Wohnfläche in m²">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <label class="form-label">Weitere Informationen, die Sie uns mitteilen wollen</label> 
-                              <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
                             </div>
                           </div>
                         </div>
+                        <div class="col-12 col-lg-6 col-sm-12">
+                          <div class="mb-3">
+                            <label class="form-label">Welche Kollektoren bevorzugen Sie?</label>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Flachkollektoren">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Flachkollektoren
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" value="Röhrenkollektoren">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Röhrenkollektoren
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Wie viel Wohnfläche wollen Sie beheizen?</label> <a href="#"
+                              data-bs-toggle="tooltip" data-bs-title="Angabe in m²"><i
+                                class="bi bi-info-circle"></i></a>
+                            <div class="row">
+                              <div class="col-6">
+                                <input type="number" name="Textfeld" class="form-control"
+                                  placeholder="Wohnfläche in m²">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Weitere Informationen, die Sie uns mitteilen wollen</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                          </div>
+                        </div>
                       </div>
-                        <input type="button" name="previous" class="previous action-button-previous" value="Zurück" />
-                        <input type="button" name="make_payment" class="next action-button" value="Nächste" />
+                    </div>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Zurück" />
+                    <input type="button" name="make_payment" class="next action-button" value="Nächste" />
                   </fieldset>
                   <fieldset>
                     <div class="form-card">
                       <strong>Angaben zu Ihrer Person:</strong>
                       <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Vorname*</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="Vorname">
@@ -728,7 +764,7 @@
                             <input type="text" name="Textfeld" class="form-control" placeholder="Telefon">
                           </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
                             <label class="form-label">Nachname*</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="Nachname">
@@ -760,17 +796,17 @@
                   </fieldset>
                   <fieldset>
                     <div class="form-card">
-                        <div class="row">
+                      <div class="row">
                         <h3 class="text-center"><strong>Danke für deine Anfrage!</strong></h3>
-                        </div>
-                    </div>
-                </fieldset>
                       </div>
                     </div>
-                  </div>
-                </form>
-
+                  </fieldset>
+                </div>
               </div>
+            </div>
+          </form>
+
+        </div>
     </section>
     <!-- Section 5 end -->
     <!-- Section 6 start -->
@@ -784,85 +820,114 @@
               <div class="accordion" id="accordionFaq">
                 <div class="accordion-item rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Warum spielt der Energiebedarf von Häusern in der Klimadebatte eine so große Rolle?
                     </button>
                   </h6>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Gebäude verschlingen etwa ein Drittel des gesamten Energieverbrauchs in Deutschland. Rund 13 Prozent davon ist Strom, 87 Prozent fließen in die Heizung. Will Deutschland die Klimaschutzziele erreichen, muss dieser Energieverbrauch um 40 Prozent gesenkt werden.  
+                      Gebäude verschlingen etwa ein Drittel des gesamten Energieverbrauchs in Deutschland. Rund 13
+                      Prozent davon ist Strom, 87 Prozent fließen in die Heizung. Will Deutschland die Klimaschutzziele
+                      erreichen, muss dieser Energieverbrauch um 40 Prozent gesenkt werden.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Was sind günstige Bedingungen für eine Solarthermieanlage?
                     </button>
                   </h6>
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Am besten geeignet ist ein unverschattetes Dach, das nach Süden zeigt. Südost- oder Südwestlagen eignen sich auch. Bei einem Ost- oder Westdach verringert sich die zu erzielende Leistung um ein Viertel. Eine Dachneigung zwischen 30 und 60 Grad ist günstig. Solarkollektoren lassen sich auch an der Hauswand anbringen.  
+                      Am besten geeignet ist ein unverschattetes Dach, das nach Süden zeigt. Südost- oder Südwestlagen
+                      eignen sich auch. Bei einem Ost- oder Westdach verringert sich die zu erzielende Leistung um ein
+                      Viertel. Eine Dachneigung zwischen 30 und 60 Grad ist günstig. Solarkollektoren lassen sich auch
+                      an der Hauswand anbringen.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Wie funktionieren Sonnenkollektoren?
                     </button>
                   </h6>
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Unter Glas liegt eine beschichtete Metallfläche, die Sonnenstrahlen aufnimmt und die dabei entstehende Wärme an ein Röhrensystem abgibt. Dieses ist mit einer Spezialflüssigkeit gefüllt und trägt die Wärme weiter. Flachkollektoren sind preislich günstiger, sammeln aber nicht so viel Wärme ein wie Röhrenkollektoren. Achtung: Auf den ersten Blick ist auf dem Dach oft nicht zu unterscheiden, ob eine Solarthermie- oder Photovoltaik-Anlage montiert ist. Im Fall von PV, also Photovoltaik, spricht man von Solarzelle, Solarpanel oder Solarmodul.  
+                      Unter Glas liegt eine beschichtete Metallfläche, die Sonnenstrahlen aufnimmt und die dabei
+                      entstehende Wärme an ein Röhrensystem abgibt. Dieses ist mit einer Spezialflüssigkeit gefüllt und
+                      trägt die Wärme weiter. Flachkollektoren sind preislich günstiger, sammeln aber nicht so viel
+                      Wärme ein wie Röhrenkollektoren. Achtung: Auf den ersten Blick ist auf dem Dach oft nicht zu
+                      unterscheiden, ob eine Solarthermie- oder Photovoltaik-Anlage montiert ist. Im Fall von PV, also
+                      Photovoltaik, spricht man von Solarzelle, Solarpanel oder Solarmodul.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                       Wie viel Fläche für die Kollektoren ist notwendig?
                     </button>
                   </h6>
                   <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Wer nur Warmwasser erzeugen will, muss pro Person etwa 1,5 m² für Flachkollektoren vorsehen. Röhrenkollektoren sind ergiebiger; da reicht 1 m² Fläche pro Person. Wenn die Heizungsunterstützung dazu kommt, ist mit 3 m² Flachkollektoren oder 2 m² Röhrenkollektoren zu rechnen.  
+                      Wer nur Warmwasser erzeugen will, muss pro Person etwa 1,5 m² für Flachkollektoren vorsehen.
+                      Röhrenkollektoren sind ergiebiger; da reicht 1 m² Fläche pro Person. Wenn die
+                      Heizungsunterstützung dazu kommt, ist mit 3 m² Flachkollektoren oder 2 m² Röhrenkollektoren zu
+                      rechnen.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                       Welche Leistung erzielt eine Solarthermieanlage?
                     </button>
                   </h6>
                   <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Je nach Technik und Witterung kann eine Anlage im Schnitt zwischen 40 und 44 Prozent der zuvor verbrauchten Energie einsparen helfen. Anders ausgedrückt: Bei der Warmwasserbereitung ist mit bis zu 65 Prozent Energieeinsparung zu rechnen; bei der Heizungsunterstützung bis zu 35 Prozent.
+                      Je nach Technik und Witterung kann eine Anlage im Schnitt zwischen 40 und 44 Prozent der zuvor
+                      verbrauchten Energie einsparen helfen. Anders ausgedrückt: Bei der Warmwasserbereitung ist mit bis
+                      zu 65 Prozent Energieeinsparung zu rechnen; bei der Heizungsunterstützung bis zu 35 Prozent.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                       Wann amortisiert sich eine Solarthermieanlage?
                     </button>
                   </h6>
                   <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Bis zum Jahr 2020 sprach man von 15 bis 20 Jahren, bis sich die Anlage rechnet. Die Zeitspanne hat sich bei der rasanten Entwicklung der Energiepreise seither radikal verkürzt. Eine Zahl zur Orientierung: Laut Verbraucherzentrale erspart eine zehn Quadratmeter große Solarthermieanlage im Jahr bis zu 2500 kWh Erdgas ein.
+                      Bis zum Jahr 2020 sprach man von 15 bis 20 Jahren, bis sich die Anlage rechnet. Die Zeitspanne hat
+                      sich bei der rasanten Entwicklung der Energiepreise seither radikal verkürzt. Eine Zahl zur
+                      Orientierung: Laut Verbraucherzentrale erspart eine zehn Quadratmeter große Solarthermieanlage im
+                      Jahr bis zu 2500 kWh Erdgas ein.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item mt-2 rounded-1">
                   <h6 class="accordion-header">
-                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <button class="accordion-button collapsed rounded-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                       Mit welchen staatlichen Fördermitteln ist zu rechnen?
                     </button>
                   </h6>
                   <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
-                      Es ist viel in Bewegung bei den Zuschüssen, die beim Neubau von Häusern und beim energetischen Umbau zu erwarten sind. Regelungen gibt es im Gebäudeenergiegesetz; es gibt eine Bundesförderung effiziente Wärmenetze, eine Bundesförderung effiziente Gebäude und es gibt Unterstützung von der staatlichen Förderbank KfW. In Teilbereichen haben auch einige Bundesländer Hilfsprogramme aufgelegt.
+                      Es ist viel in Bewegung bei den Zuschüssen, die beim Neubau von Häusern und beim energetischen
+                      Umbau zu erwarten sind. Regelungen gibt es im Gebäudeenergiegesetz; es gibt eine Bundesförderung
+                      effiziente Wärmenetze, eine Bundesförderung effiziente Gebäude und es gibt Unterstützung von der
+                      staatlichen Förderbank KfW. In Teilbereichen haben auch einige Bundesländer Hilfsprogramme
+                      aufgelegt.
                     </div>
                   </div>
                 </div>
