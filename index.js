@@ -29,13 +29,17 @@ var swiper = new Swiper(".swiper", {
         slidesPerView: 2
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 3
       },
       1560: {
         slidesPerView: 3
       }
     }
   });
+function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
 
 // Form
 $(document).ready(function(){
@@ -110,3 +114,7 @@ $(document).ready(function(){
 // Tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// Popovers
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
