@@ -1,3 +1,4 @@
+/* Styling und Umsetzung von Sonia Malki Prüf. Nr: 11611 */
 :root,
 [data-bs-theme=SR-dark] {
   --background-black: #161616;
@@ -25,10 +26,10 @@
   font-family: 'Inter';
   src: url('/Content/Fonts/Inter-Bold.eot');
   src: url('/Content/Fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/Content/Fonts/Inter-Bold.woff2') format('woff2'),
-      url('/Content/Fonts/Inter-Bold.woff') format('woff'),
-      url('/Content/Fonts/Inter-Bold.ttf') format('truetype'),
-      url('/Content/Fonts/Inter-Bold.svg#Inter-Bold') format('svg');
+    url('/Content/Fonts/Inter-Bold.woff2') format('woff2'),
+    url('/Content/Fonts/Inter-Bold.woff') format('woff'),
+    url('/Content/Fonts/Inter-Bold.ttf') format('truetype'),
+    url('/Content/Fonts/Inter-Bold.svg#Inter-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -38,10 +39,10 @@
   font-family: 'Inter';
   src: url('/Content/Fonts/Inter-Medium.eot');
   src: url('/Content/Fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
-      url('/Content/Fonts/Inter-Medium.woff2') format('woff2'),
-      url('/Content/Fonts/Inter-Medium.woff') format('woff'),
-      url('/Content/Fonts/Inter-Medium.ttf') format('truetype'),
-      url('/Content/Fonts/Inter-Medium.svg#Inter-Medium') format('svg');
+    url('/Content/Fonts/Inter-Medium.woff2') format('woff2'),
+    url('/Content/Fonts/Inter-Medium.woff') format('woff'),
+    url('/Content/Fonts/Inter-Medium.ttf') format('truetype'),
+    url('/Content/Fonts/Inter-Medium.svg#Inter-Medium') format('svg');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -51,10 +52,10 @@
   font-family: 'Inter';
   src: url('/Content/Fonts/Inter-Regular.eot');
   src: url('/Content/Fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/Content/Fonts/Inter-Regular.woff2') format('woff2'),
-      url('/Content/Fonts/Inter-Regular.woff') format('woff'),
-      url('/Content/Fonts/Inter-Regular.ttf') format('truetype'),
-      url('/Content/Fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+    url('/Content/Fonts/Inter-Regular.woff2') format('woff2'),
+    url('/Content/Fonts/Inter-Regular.woff') format('woff'),
+    url('/Content/Fonts/Inter-Regular.ttf') format('truetype'),
+    url('/Content/Fonts/Inter-Regular.svg#Inter-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -82,7 +83,8 @@ ul {
   padding: 1rem 2rem;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   background: var(--btn-primary-hover);
   color: var(--white);
   border: 0 none;
@@ -135,7 +137,7 @@ h3 {
 
 h4 {
   font-size: 1.875rem;
-  font-weight: 500    ;
+  font-weight: 500;
 }
 
 h5 {
@@ -165,13 +167,40 @@ a {
   color: var(--orange);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--btn-primary-hover);
 }
 
-/* Navigation */
-header {
+@media screen and (max-width: 768px){
+  h1 {
+    font-size: 3.063rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: 1.688rem;
+    font-weight: 500;
+  }
+  
+  h5 {
+    font-size: 1.438rem;
+    font-weight: 500;
+  }
 }
+
+/* Navigation */
 
 nav {
   background: var(--glas);
@@ -191,7 +220,8 @@ nav .nav-link {
   color: var(--white);
 }
 
-nav .nav-link:hover, nav .nav-link:focus {
+nav .nav-link:hover,
+nav .nav-link:focus {
   color: var(--orange);
 }
 
@@ -230,16 +260,11 @@ nav .nav-link:hover, nav .nav-link:focus {
   margin: 0 auto;
   min-height: 60vh;
   column-gap: 3rem;
-  padding-block: min(20vh, 3rem);
 }
 
 .slider-side-text {
   width: 25%;
   display: flex;
-}
-
-.swiper {
-  padding-top: 3.125rem;
 }
 
 .swiper-pagination-bullet,
@@ -248,7 +273,7 @@ nav .nav-link:hover, nav .nav-link:focus {
 }
 
 .swiper-pagination {
-  bottom: 1.25rem !important;
+  bottom: 2rem !important;
 }
 
 .swiper-slide {
@@ -342,67 +367,76 @@ nav .nav-link:hover, nav .nav-link:focus {
   }
 }
 
-/* @media screen and (min-width: 93.75rem) {
-    .swiper {
-      width: 85%;
-    }
-  } */
+/* Expertise */
 
+/* Image Map */
+.image-map {
+  position: relative;
+}
 
-  /* Expertise */
-  /* Image Map */
-  .image-map {
-    position: relative;
-  }
+.btn-map {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--btn-primary);
+  border: 0 none;
+  outline: 0.2rem solid var(--btn-primary);
+  outline-offset: 0.33rem;
+}
 
+.btn-map:hover,
+.btn-map:focus {
+  border-radius: 50%;
+  background-color: var(--btn-primary-hover);
+  border: 0 none;
+  outline: 0.2rem solid var(--btn-primary-hover);
+  outline-offset: 0.33rem;
+}
+
+@media screen and (max-width:768px) {
   .btn-map {
-    width: 2rem; 
-    height: 2rem;
-    border-radius: 50%;
-    background-color: var(--btn-primary);
-    border: 0 none;
-    outline: 0.2rem solid var(--btn-primary);
-    outline-offset: 0.33rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    font-size: 0.75;
   }
+}
 
-  .btn-map:hover, .btn-map:focus {
-    border-radius: 50%;
-    background-color: var(--btn-primary-hover);
-    border: 0 none;
-    outline: 0.2rem solid var(--btn-primary-hover);
-    outline-offset: 0.33rem;
-  }
-  
-  .btn-img-1 {
-    position: absolute; 
-    left: 42%; 
-    top: 3%; 
-  }
-  .btn-img-2 {
-    position: absolute; 
-    left: 30%; 
-    top: 55%; 
-  }
-  .btn-img-3 {
-    position: absolute; 
-    left: 42%; 
-    top: 72%; 
-  }
-  .btn-img-4 {
-    position: absolute; 
-    left: 50%; 
-    top: 35%; 
-  }
-  .btn-img-5 {
-    position: absolute; 
-    left: 60%; 
-    top: 80%; 
-  }
-  .btn-img-6 {
-    position: absolute; 
-    left: 67%; 
-    top: 45%; 
-  }
+.btn-img-1 {
+  position: absolute;
+  left: 42%;
+  top: 3%;
+}
+
+.btn-img-2 {
+  position: absolute;
+  left: 30%;
+  top: 55%;
+}
+
+.btn-img-3 {
+  position: absolute;
+  left: 42%;
+  top: 72%;
+}
+
+.btn-img-4 {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+}
+
+.btn-img-5 {
+  position: absolute;
+  left: 60%;
+  top: 80%;
+}
+
+.btn-img-6 {
+  position: absolute;
+  left: 67%;
+  top: 45%;
+}
 
 #expertise .row>* {
   padding-left: 0;
@@ -411,8 +445,14 @@ nav .nav-link:hover, nav .nav-link:focus {
 
 /* Team */
 
-#team .card{
+#team .card {
   border: var(--brd);
+}
+
+@media screen and (max-width: 992px) {
+  #team .card {
+    width: 18rem;
+  }
 }
 
 /*form styles*/
@@ -522,7 +562,10 @@ nav .nav-link:hover, nav .nav-link:focus {
   padding: 1rem 2rem;
 }
 
-
+.bi-info-circle {
+  color: var(--orange);
+  cursor: pointer;
+}
 /*The background card*/
 .card {
   z-index: 0;
@@ -614,7 +657,7 @@ nav .nav-link:hover, nav .nav-link:focus {
   background: var(--orange);
 }
 
-/*Imaged Radio Buttons*/
+/*Radio Buttons*/
 .form-check-input:checked[type=radio] {
   background-image: url(/Content/Images/check.svg);
   background-color: transparent;
@@ -629,6 +672,26 @@ label.form-check-label {
   font-weight: 400;
 }
 
+#msform label.form-label.label-sm {
+  font-weight: 400;
+}
+
+.form-personal-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .form-personal-mobile {
+    display: block;
+  }
+  .form-personal {
+    display: none;
+  }
+  #solar {
+    word-break: break-all;
+  }
+}
+
 /*Fit image in bootstrap div*/
 .fit-image {
   width: 100%;
@@ -641,7 +704,7 @@ label.form-check-label {
   --bs-accordion-active-color: var(--white);
   --bs-accordion-active-bg: var(--glas);
   --bs-accordion-border-color: var(--glas);
-  --bs-accordion-bg:var(--black);
+  --bs-accordion-bg: var(--black);
   --bs-accordion-btn-bg: var(--glas);
 }
 
@@ -667,23 +730,27 @@ footer {
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   footer .row {
     display: flex;
     flex-flow: column;
   }
+
   footer .conatct {
     order: 2;
   }
+
   footer .footer-logo {
-    display: flex;;
+    display: flex;
     justify-content: center;
     order: 1;
-    img  {
+
+    img {
       width: 170px;
       height: 100px;
     }
-  } 
+  }
+
   footer .legal {
     display: flex;
     align-items: start;

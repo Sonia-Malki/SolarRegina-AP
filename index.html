@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
+<!-- Styling und Umsetzung von Sonia Malki Prüf. Nr: 11611 -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Slider Stylesheet -->
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
-  <link rel="stylesheet" href="style.css">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="stylesheet" href="/CSS/style.css">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
@@ -93,13 +91,12 @@
       <div class="cover-container p-0 m-0 ">
         <!-- Content start -->
         <div class="hero-img p-md-5 mb-4 bg-image d-flex justify-content-center align-items-center img-fluid">
-          <div class="col-lg px-0">
+          <div class="col-lg px-xl-0 px-4">
             <h1 class=""><span>SolarRegina</span> GmbH</h1>
             <p class="my-3">Die Sonnenkönigin aus Soltau – spezialisiert auf umweltfreundliche Heizungs- und
               Klimatechnik</p>
           </div>
         </div>
-
         <!-- Content end -->
       </div>
     </section>
@@ -108,108 +105,106 @@
     <section class="angebote" id="angebote">
       <div class="container-fluid">
         <!-- Content goes here -->
-        <div class="content">
-          <h2 class="text-center">Unsere Angebote</h2>
+        <div class="content mb-4 py-3 py-md-5">
+          <h2 class="text-center mb-md-5 mb-3">Unsere Angebote</h2>
           <!-- Slider -->
           <div class="row align-items-center">
-            <div class="swiper col-xl-8 col-lg-6">
+            <div class="swiper col-xl-8 col-lg-6 py-4">
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide--one">
                   <div class="slide-text text-center">
                     <h4><a class="" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="true"
-                        aria-controls="collapseExample">
-                        Beratung
-                      </a>
-                      <div class="collapse show" id="collapseExample">
-                        <div class="text-center">
-                          <p>Wir suchen die beste Lösung für Ihr Haus.</p>
-                        </div>
+                      aria-controls="collapseExample">
+                      Beratung
+                    </a></h4>
+                    <div class="collapse" id="collapseExample">
+                      <div class="text-center">
+                        <p>Wir suchen die beste Lösung für Ihr Haus.</p>
                       </div>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide swiper-slide--two">
                   <div class="slide-text text-center">
                     <h4><a class="" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="true"
-                        aria-controls="collapseExample1">
-                        Planung
-                      </a>
-                      <div class="collapse show" id="collapseExample1">
-                        <div class="text-center">
-                          <p>Wir legen Ihnen ein umweltfreundliches Konzept vor.</p>
-                        </div>
+                      aria-controls="collapseExample1">
+                      Planung
+                    </a></h4>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="text-center">
+                        <p>Wir legen Ihnen ein umweltfreundliches Konzept vor.</p>
                       </div>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide swiper-slide--three">
                   <div class="slide-text text-center">
                     <h4><a class="" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="true"
-                        aria-controls="collapseExample2">
-                        Ein- und Umbau
-                      </a>
-                      <div class="collapse show" id="collapseExample2">
-                        <div class="text-center">
-                          <p>Wir realisieren diese Planung.</p>
-                        </div>
+                      aria-controls="collapseExample2">
+                      Ein- und Umbau
+                    </a></h4>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="text-center">
+                        <p>Wir realisieren diese Planung.</p>
                       </div>
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide swiper-slide--four">
                   <div class="slide-text text-center">
                     <h4><a class="" data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="true"
-                        aria-controls="collapseExample3">
-                        Wartung
-                      </a>
-                      <div class="collapse show" id="collapseExample3">
-                        <div class="text-center">
-                          <p>Wir sorgen für die dauerhafte Leistung.</p>
-                        </div>
+                      aria-controls="collapseExample3">
+                      Wartung
+                    </a></h4>
+                    <div class="collapse" id="collapseExample3">
+                      <div class="text-center">
+                        <p>Wir sorgen für die dauerhafte Leistung.</p>
                       </div>
-                  </div>
-                </div>
-                  <div class="swiper-slide swiper-slide--five">
-                    <div class="slide-text text-center">
-                      <h4><a class="" data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="true"
-                          aria-controls="collapseExample4">
-                          Reparatur
-                        </a>
-                        <div class="collapse show" id="collapseExample4">
-                          <div class="text-center">
-                            <p>Wir springen bei Ausfällen sofort ein.</p>
-                          </div>
-                        </div>
                     </div>
                   </div>
-                  <!-- Add Pagination -->
-                  <div class="swiper-pagination"></div>
                 </div>
-            </div>
-                <!-- Slider Side Text -->
-                <div class="silder-side-text col-xl-4 col-lg-6 px-5">
-                  <p>Alle reden von Klimaschutz und Energiepreisen: Wir tun etwas – gemeinsam mit Ihnen.</p>
-                  <p>Wir holen Ihnen die Sonnenwärme ins Haus! Oder, falls Sie das heiße Duschwasser bereits über
-                    Solarkollektoren erzeugen: Erweitern Sie die Anlage für Heizzwecke! Wir sind Ihr Partner bei der
-                    Suche
-                    nach der besten Kombination von Solarthermie und Wärmepumpe.
-                    Stöbern Sie auf dieser Website.</p>
-                  <p>Füllen Sie das <a href="#formular">Erstanfrage-Formular</a> aus. So erfahren wir alles Notwendige
-                    vor
-                    einer Hausbegehung und
-                    Energieberatung.</p>
-                  <a href="#formular"><button class="btn btn-primary">Zum Formular</button></a>
+                <div class="swiper-slide swiper-slide--five">
+                  <div class="slide-text text-center">
+                    <h4><a class="" data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="true"
+                      aria-controls="collapseExample4">
+                      Reparatur
+                    </a></h4>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="text-center">
+                        <p>Wir springen bei Ausfällen sofort ein.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Slider Side Text -->
+            <div class="silder-side-text col-xl-4 col-lg-6 px-5">
+              <p>Alle reden von Klimaschutz und Energiepreisen: Wir tun etwas – gemeinsam mit Ihnen.</p>
+              <p>Wir holen Ihnen die Sonnenwärme ins Haus! Oder, falls Sie das heiße Duschwasser bereits über
+                Solarkollektoren erzeugen: Erweitern Sie die Anlage für Heizzwecke! Wir sind Ihr Partner bei der Suche
+                nach der besten Kombination von Solarthermie und Wärmepumpe.
+                Stöbern Sie auf dieser Website.</p>
+              <p>Füllen Sie das <a href="#formular">Erstanfrage-Formular</a> aus. So erfahren wir alles Notwendige vor
+                einer Hausbegehung und
+                Energieberatung.</p>
+              <a href="#formular"><button class="btn btn-primary">Zum Formular</button></a>
             </div>
           </div>
+        </div>
+      </div>
     </section>
     <!-- Section 2 end -->
     <!-- Section 3 start -->
     <section class="expertise" id="expertise">
       <div class="container-fluid">
         <!-- Content goes here -->
-        <div class="content">
-          <h2 class="text-center">Unsere Expertise</h2>
-          <div class="row align-items-center py-5">
-            <div class="col-xl-8 col-lg-6">
+        <div class="content mb-4 py-3 py-md-5">
+          <h2 class="text-center mb-md-5 mb-3">Unsere Expertise</h2>
+          <div class="row align-items-center py-3">
+            <div class="col-xl-8 col-lg-6 py-4">
               <div class="image-map">
                 <img src="/Content/Images/Skizze.svg" style="width: 100%; height: auto;" alt="Skizze von einem Querschnitt Haus">
                 <button type="button" class="btn btn-map btn-img-1" data-bs-container="body" data-bs-toggle="popover"
@@ -238,7 +233,7 @@
                 </button>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-6 px-5">
+            <div class="col-xl-4 col-lg-6 px-5 py-4">
               <h3 class="">
                 So funktioniert Solarthermie
               </h3>
@@ -257,8 +252,8 @@
               <a href="#faq"><button class="btn btn-primary">FAQ</button></a>
             </div>
           </div>
-          <div class="row align-items-center py-5">
-            <div class="col-xl-4 col-lg-6 px-5">
+          <div class="row align-items-center py-3">
+            <div class="col-xl-4 col-lg-6 px-5 py-4">
               <h3 class="">
                 Energieeffizienz-Beratung
               </h3>
@@ -270,15 +265,15 @@
                 Sanierungsvorhabens mit öffentlichen Mitteln. </p>
               <p>Die Kosten für die Energieeffizienz-Beratung werden mit bis zu 50 Prozent vom Bund getragen.</p>
             </div>
-            <div class="col-xl-8 col-lg-6">
+            <div class="col-xl-8 col-lg-6 py-4 px-xl-0 px-lg-0 px-5">
               <img src="/Content/Images/Energieeffizienz-Beratung.jpg" class="img-fluid rounded-start rounded-1" alt="Vater mit Kind am Arm zeigt auf einem Haus mis Solarpanele">
             </div>
           </div>
-          <div class="row align-items-center py-5">
-            <div class="col-xl-8 col-lg-6">
+          <div class="row align-items-center py-3">
+            <div class="col-xl-8 col-lg-6 py-4 px-xl-0 px-lg-0 px-5">
               <img src="/Content/Images/Wärmepumpen-Technologie.jpg" class="img-fluid rounded-end rounded-1" alt="Hausdach mit Solarpanele">
             </div>
-            <div class="col-xl-4 col-lg-6 px-5">
+            <div class="col-xl-4 col-lg-6 px-5 py-4">
               <h3 class="">
                 Wärmepumpen-Technologie
               </h3>
@@ -303,10 +298,10 @@
     <section class="team" id="team">
       <div class="container">
         <!-- Content goes here -->
-        <div class="content py-5">
-          <h2 class="text-center">Unser Team</h2>
+        <div class="content mb-4 py-3 py-md-5">
+          <h2 class="text-center mb-md-5 mb-3">Unser Team</h2>
           <div class="row gx-3 py-5">
-            <div class="col-lg-4 col-md-12 px-5 py-3">
+            <div class="col-lg-4 col-md-12 px-5 py-3 d-flex justify-content-center">
               <div class="card ">
                 <img src="/Content/Images/Team-Bild-1.png" class="card-img-top" alt="Hans Hümme Miatbeiterbild Man lächelt">
                 <div class="card-body">
@@ -316,7 +311,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 px-5 py-3">
+            <div class="col-lg-4 col-md-12 px-5 py-3 d-flex justify-content-center">
               <div class="card">
                 <img src="/Content/Images/Team-Bild-2.png" class="card-img-top" alt="Regina Hümme Miatbeiterbild Frau lächelt">
                 <div class="card-body">
@@ -326,7 +321,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 px-5 py-3">
+            <div class="col-lg-4 col-md-12 px-5 py-3 d-flex justify-content-center">
               <div class="card">
                 <img src="/Content/Images/Team-Bild-3.png" class="card-img-top" alt="Leonie Hümme Miatbeiterbild Frau lächelt">
                 <div class="card-body">
@@ -343,8 +338,8 @@
     <section class="formular" id="formular">
       <div class="container-fluid">
         <!-- Content goes here -->
-        <div class="content">
-          <h2 class="text-center">Erstanfrage-Formular</h2>
+        <div class="content mb-4 py-3 py-md-5">
+          <h2 class="text-center mb-md-5 mb-3">Erstanfrage-Formular</h2>
           <p class="text-center">Erweitern Sie die Anlage für Heizzwecke. Wir sind Ihr Partner bei der Suche nach der
             besten Kombination von Solarthermie und Wärmepumpe.</p>
           <h3 class="text-center">Checkliste Solarthermie</h3>
@@ -434,32 +429,32 @@
                             <div class="row">
                               <div class="col">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="0°">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault2" value="0°">
+                                  <label class="form-check-label" for="flexRadioDefault2">
                                     0°
                                   </label>
                                 </div>
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="15°">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault2" value="15°">
+                                  <label class="form-check-label" for="flexRadioDefault2">
                                     15°
                                   </label>
                                 </div>
                               </div>
                               <div class="col">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="30°">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault2" value="30°">
+                                  <label class="form-check-label" for="flexRadioDefault2">
                                     30°
                                   </label>
                                 </div>
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="60°">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault2" value="60°">
+                                  <label class="form-check-label" for="flexRadioDefault2">
                                     60°
                                   </label>
                                 </div>
@@ -469,14 +464,16 @@
                         </div>
                         <div class="col-12 col-lg-6 col-sm-12">
                           <div class="mb-3">
-                            <label class="form-label">Wie ist Ihr Haus ausgestattet?</label> <a href="#"
+                            <label class="form-label">Wie ist Ihr Haus ausgestattet?</label> <a
                               data-bs-toggle="tooltip" data-bs-title="Angabe in m"><i class="bi bi-info-circle"></i></a>
                             <div class="row">
                               <div class="col">
                                 <input type="number" name="Textfeld" class="form-control" placeholder="Breite">
+                                <label class="form-label label-sm">Breite</label>
                               </div>
                               <div class="col">
                                 <input type="number" name="Textfeld" class="form-control" placeholder="Höhe">
+                                <label class="form-label label-sm">Höhe</label>
                               </div>
                             </div>
                           </div>
@@ -605,44 +602,44 @@
                             <div class="row">
                               <div class="col">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="nur Warmwasserbereitung">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault3" value="nur Warmwasserbereitung">
+                                  <label class="form-check-label" for="flexRadioDefault3">
                                     nur Warmwasserbereitung
                                   </label>
                                 </div>
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="Heizungsunterstützung">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault3" value="Heizungsunterstützung">
+                                  <label class="form-check-label" for="flexRadioDefault3">
                                     Heizungsunterstützung
                                   </label>
                                 </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="beides">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                  id="flexRadioDefault3" value="beides">
+                                <label class="form-check-label" for="flexRadioDefault3">
                                   beides
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="mit Anschluss Geschirrspüler">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                  id="flexRadioDefault3" value="mit Anschluss Geschirrspüler">
+                                <label class="form-check-label" for="flexRadioDefault3">
                                   mit Anschluss Geschirrspüler
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="mit Anschluss Waschmaschine">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                  id="flexRadioDefault3" value="mit Anschluss Waschmaschine">
+                                <label class="form-check-label" for="flexRadioDefault3">
                                   mit Anschluss Waschmaschine
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                  id="flexRadioDefault1" value="beides">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                  id="flexRadioDefault3" value="beides">
+                                <label class="form-check-label" for="flexRadioDefault3">
                                   beides
                                 </label>
                               </div>
@@ -651,7 +648,7 @@
                           </div>
                           <div class="mb-3">
                             <label class="form-label">Wie groß ist Ihr täglicher Warmwasserverbrauch?</label> <a
-                              href="#" data-bs-toggle="tooltip" data-bs-title="Angabe in Liter"><i
+                               data-bs-toggle="tooltip" data-bs-title="Angabe in Liter"><i
                                 class="bi bi-info-circle"></i></a>
                             <div class="row">
                               <div class="col-6">
@@ -727,18 +724,18 @@
                             <div class="row">
                               <div class="col">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="Flachkollektoren">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                    id="flexRadioDefault4" value="Flachkollektoren">
+                                  <label class="form-check-label" for="flexRadioDefault4">
                                     Flachkollektoren
                                   </label>
                                 </div>
                               </div>
                               <div class="col">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" value="Röhrenkollektoren">
-                                  <label class="form-check-label" for="flexRadioDefault1">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                    id="flexRadioDefault4" value="Röhrenkollektoren">
+                                  <label class="form-check-label" for="flexRadioDefault4">
                                     Röhrenkollektoren
                                   </label>
                                 </div>
@@ -746,7 +743,7 @@
                             </div>
                           </div>
                           <div class="mb-3">
-                            <label class="form-label">Wie viel Wohnfläche wollen Sie beheizen?</label> <a href="#"
+                            <label class="form-label">Wie viel Wohnfläche wollen Sie beheizen?</label> <a
                               data-bs-toggle="tooltip" data-bs-title="Angabe in m²"><i
                                 class="bi bi-info-circle"></i></a>
                             <div class="row">
@@ -767,54 +764,108 @@
                     <input type="button" name="next" class="next action-button" value="Nächste" />
                   </fieldset>
                   <fieldset>
-                    <div class="form-card">
+                    <div class="form-card form-personal">
                       <strong>Angaben zu Ihrer Person:</strong>
                       <div class="row">
-                        <div class="col-12 col-lg-6 col-sm-12">
-                          <div class="mb-3">
-                            <label class="form-label">Vorname*</label>
+                        <div class="col-12 col-lg-6 col-sm-12 ">
+                          <div class="mb-3 msf-name">
+                            <label class="form-label label-sm">Vorname*</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="Vorname" required="">
                           </div>
                           <div class="row">
                             <div class="col-9">
-                              <div class="mb-3">
-                                <label class="form-label">Straße*</label>
+                              <div class="mb-3 msf-street">
+                                <label class="form-label label-sm">Straße*</label>
                                 <input type="text" name="Textfeld" class="form-control" placeholder="Straße" required="">
                               </div>
                             </div>
                             <div class="col-3">
-                              <div class="mb-3">
-                                <label class="form-label">Hausnummer*</label>
+                              <div class="mb-3 msf-nr">
+                                <label class="form-label label-sm">Hausnummer*</label>
                                 <input type="text" name="Textfeld" class="form-control" placeholder="Nr." required="">
                               </div>
                             </div>
                           </div>
-                          <div class="mb-3">
-                            <label class="form-label">Telefon</label>
+                          <div class="mb-3 msf-phone">
+                            <label class="form-label label-sm">Telefon</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="Telefon">
                           </div>
                         </div>
                         <div class="col-12 col-lg-6 col-sm-12">
-                          <div class="mb-3">
-                            <label class="form-label">Nachname*</label>
+                          <div class="mb-3 msf-lastname">
+                            <label class="form-label label-sm">Name*</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="Nachname" required="">
                           </div>
                           <div class="row">
                             <div class="col-3">
-                              <div class="mb-3">
-                                <label class="form-label">PLZ*</label>
+                              <div class="mb-3 msf-zip">
+                                <label class="form-label label-sm">PLZ*</label>
                                 <input type="text" name="Textfeld" class="form-control" placeholder="PLZ" required="">
                               </div>
                             </div>
                             <div class="col-9">
-                              <div class="mb-3">
-                                <label class="form-label">Ort*</label>
+                              <div class="mb-3 msf-city">
+                                <label class="form-label label-sm">Ort*</label>
                                 <input type="text" name="Textfeld" class="form-control" placeholder="Ort" required="">
                               </div>
                             </div>
                           </div>
-                          <div class="mb-3">
-                            <label class="form-label">E-Mail-Adresse*</label>
+                          <div class="mb-3 msf-email">
+                            <label class="form-label label-sm">E-Mail-Adresse*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="E-Mail-Adresse" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="body-tiny">*Pflichtfeld</p>
+                    </div>
+                    <div class="form-card form-personal-mobile">
+                      <strong>Angaben zu Ihrer Person:</strong>
+                      <div class="row">
+                        <div class="col-12 col-lg-6 col-sm-12 ">
+                          <div class="mb-3 msf-name">
+                            <label class="form-label label-sm">Vorname*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Vorname" required="">
+                          </div>
+                          <div class="mb-3 msf-lastname ">
+                            <label class="form-label label-sm">Name*</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Nachname" required="">
+                          </div>
+                          <div class="row">
+                            <div class="col-9">
+                              <div class="mb-3 msf-street">
+                                <label class="form-label label-sm">Straße*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Straße" required="">
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="mb-3 msf-nr">
+                                <label class="form-label label-sm">Hausnummer*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Nr." required="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-12">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="mb-3 msf-zip">
+                                <label class="form-label label-sm">PLZ*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="PLZ" required="">
+                              </div>
+                            </div>
+                            <div class="col-9">
+                              <div class="mb-3 msf-city">
+                                <label class="form-label label-sm">Ort*</label>
+                                <input type="text" name="Textfeld" class="form-control" placeholder="Ort" required="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3 msf-phone">
+                            <label class="form-label label-sm">Telefon</label>
+                            <input type="text" name="Textfeld" class="form-control" placeholder="Telefon">
+                          </div>
+                          <div class="mb-3 msf-email">
+                            <label class="form-label label-sm">E-Mail-Adresse*</label>
                             <input type="text" name="Textfeld" class="form-control" placeholder="E-Mail-Adresse" required="">
                           </div>
                         </div>
@@ -843,8 +894,8 @@
     <section class="faq" id="faq">
       <div class="container">
         <!-- Content goes here -->
-        <div class="content">
-          <h2 class="text-center">FAQ</h2>
+        <div class="content mb-4 py-3 py-md-5">
+          <h2 class="text-center mb-md-5 mb-3">FAQ</h2>
           <div class="row justify-content-center">
             <div class="col-11 col-sm-10 col-md-10 col-lg-8 p-0 mt-3 mb-2">
               <div class="accordion" id="accordionFaq">
