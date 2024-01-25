@@ -1,6 +1,6 @@
 # SolarRegina | 23.01.2024
 
-Für eine fehlerfreie Erfahrung wird ein moderner Browser (Google Chrome, Firefox, Edge, Opera, Safari) empfohlen. Eine Internetverbindung ist nötig. 
+Für eine fehlerfreie Erfahrung wird ein moderner Browser (Google Chrome) empfohlen. Eine Internetverbindung ist nötig. 
 
 ==============
 
